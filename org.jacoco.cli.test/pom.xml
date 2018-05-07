@@ -25,6 +25,8 @@
 
   <properties>
     <jacoco.includes>org.jacoco.cli.*</jacoco.includes>
+    <!-- args4j uses default locale for exception messages -->
+    <jvm.args>-Duser.language=en</jvm.args>
   </properties>
 
   <dependencies>
