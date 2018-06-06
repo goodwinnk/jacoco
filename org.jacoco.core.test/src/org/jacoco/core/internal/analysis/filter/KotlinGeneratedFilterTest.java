@@ -11,6 +11,14 @@
  *******************************************************************************/
 package org.jacoco.core.internal.analysis.filter;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.jacoco.core.internal.instr.InstrSupport;
 import org.junit.Test;
 import org.objectweb.asm.Label;
@@ -18,19 +26,13 @@ import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-
-import static org.junit.Assert.*;
-
-public class KotlinNoSourceLinesFilterTest implements IFilterOutput {
+public class KotlinGeneratedFilterTest implements IFilterOutput {
 	private final static Set<String> KOTLIN_ANNOTATIONS_SET =
 			new HashSet<String>(Collections.singletonList(
-					KotlinNoSourceLinesFilter.KOTLIN_METADATA_DESC
+					KotlinGeneratedFilter.KOTLIN_METADATA_DESC
 			));
 
-	private final IFilter filter = new KotlinNoSourceLinesFilter();
+	private final IFilter filter = new KotlinGeneratedFilter();
 
 
 	private AbstractInsnNode fromInclusive;
