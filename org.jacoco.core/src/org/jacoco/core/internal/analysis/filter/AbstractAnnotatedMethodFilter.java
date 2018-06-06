@@ -11,11 +11,11 @@
  *******************************************************************************/
 package org.jacoco.core.internal.analysis.filter;
 
-import org.objectweb.asm.tree.AnnotationNode;
-import org.objectweb.asm.tree.MethodNode;
-
 import java.util.List;
 import java.util.Set;
+
+import org.objectweb.asm.tree.AnnotationNode;
+import org.objectweb.asm.tree.MethodNode;
 
 /**
  * Filters annotated methods.

@@ -11,9 +11,9 @@
  *******************************************************************************/
 package org.jacoco.core.internal.analysis.filter;
 
-import org.objectweb.asm.tree.MethodNode;
-
 import java.util.Set;
+
+import org.objectweb.asm.tree.MethodNode;
 
 /**
  * Filters methods <code>values</code> and <code>valueOf</code> that compiler

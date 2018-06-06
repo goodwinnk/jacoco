@@ -11,10 +11,10 @@
  *******************************************************************************/
 package org.jacoco.core.internal.analysis.filter;
 
+import java.util.Set;
+
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.MethodNode;
-
-import java.util.Set;
 
 /**
  * Filters private empty constructors that do not have arguments.

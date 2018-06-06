@@ -112,7 +112,7 @@ public class MethodAnalyzerTest implements IProbeIdGenerator {
 	/** Filters the NOP instructions as ignored */
 	private static final IFilter NOP_FILTER = new IFilter() {
 		public void filter(final String className, final String superClassName,
-				Set<String> classAnnotations, String sourceFileName,
+				final Set<String> classAnnotations, final String sourceFileName,
 				final MethodNode methodNode, final IFilterOutput output) {
 			final AbstractInsnNode i1 = methodNode.instructions.get(2);
 			final AbstractInsnNode i2 = methodNode.instructions.get(3);

@@ -54,14 +54,14 @@ public class ClassAnalyzer extends ClassProbesVisitor {
 	public void visit(final int version, final int access, final String name,
 			final String signature, final String superName,
 			final String[] interfaces) {
-		classAnnotations.clear();
 		coverage.setSignature(stringPool.get(signature));
 		coverage.setSuperName(stringPool.get(superName));
 		coverage.setInterfaces(stringPool.get(interfaces));
 	}
 
 	@Override
-	public AnnotationVisitor visitAnnotation(String desc, boolean visible) {
+	public AnnotationVisitor visitAnnotation(final String desc,
+			final boolean visible) {
 		classAnnotations.add(desc);
 		return super.visitAnnotation(desc, visible);
 	}

@@ -84,7 +84,7 @@ public class MethodAnalyzer extends MethodProbesVisitor
 	 * @param superClassName
 	 *            superclass name
 	 * @param classAnnotations
-	 * 			  set of class annotations descriptors
+	 *            set of class annotations descriptors
 	 * @param sourceFileName
 	 *            name of the source file
 	 * @param name
